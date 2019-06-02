@@ -34,10 +34,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return employeeRepo.findByEmployeeId(employeeId);
 	}
 
-//	@Override
-//	public Employee findByName(String firstName, String lastName) {
-//		return employeeRepo.findby
-//	}
+	@Override
+	public Employee findByName(String name) {
+		return employeeRepo.findByFirstAndLastName(name);
+	}
+
 	
 	
 
